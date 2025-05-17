@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "gilroy";
+  }
+  html,body{
+    width: 100%;
+    height: 100%;
+  }
+.animation{
+  /* padding: 30px; */
+  white-space:nowrap;
+  overflow: hidden;
+  
+}
+.Animation{
+  animation: anime 4s linear infinite;
+  margin-left: -5px;
+
+}
+@keyframes anime {
+  from{
+      transform: translatex(0);
+  }
+  to{
+      transform: translatex(-100%);
+  }
+}
+#dev a::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: rebeccapurple;
+    position: absolute;
+    bottom:0%;
+    left: 0%;
+    transition: all ease 1s;
+}
+#dev a:hover::before{
+    width: 100%;
+}
